@@ -1,0 +1,28 @@
+<div class = "container-fluid">
+<div class="container justify-content-center">
+<div *ngIf="!registerMode" style='text-align: center;'>
+  <div style="text-align: center;">
+    <div class="alert alert-rose alert-with-icon" >
+      <h2>Find Your Match! Guyana!</h2>
+      </div>
+    <h1>Find your Match</h1>
+    <p class="lead"> come on in and view your matches</p>
+    <button (click)="registerToggle()" class = "btn-btn-primary btn-lg mr-2">Register</button>
+ 
+    <button class = "btn-btn-info btn-lg">Learn More</button>
+  </div>
+</div>
+
+
+<div *ngIf="registerMode" class="container">
+  <div class="row justify-content-center">
+ <div class="col-4" row justify-content-center>
+   <p> Register form goes here</p>
+   <app-register  (cancelRegister)="cancelRegisterMode($event)"></app-register>
+ </div>
+</div>
+</div>
+</div>
+</div>
+
+
