@@ -48,6 +48,10 @@ import { AboutusComponent } from "./examples/aboutus/aboutus.component";
 //import { ResetpageComponent } from "./examples/resetpage/resetpage.component";
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { FooterComponent } from "./components/footer/footer.component";
+import { MemberListComponent } from './members/member-list/member-list.component';
+import { MemberDetailComponent } from './members/member-detail/member-detail.component';
+import { ListsComponent } from './lists/lists.component';
+import { MessagesComponent } from './messages/messages.component';
 //import { PictureUploadComponent } from "./components/picture-upload/picture-upload.component";
 
 
@@ -64,7 +68,11 @@ import { FooterComponent } from "./components/footer/footer.component";
     FooterComponent,
     AppComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    MemberListComponent,
+    MemberDetailComponent,
+    ListsComponent,
+    MessagesComponent
 
     
   ],
