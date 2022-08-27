@@ -43,3 +43,11 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+#cache
+/.angular/cache
+/. argon-design-system-pro-angular-v1.3.0/.angular/cache/13.3.9/angular-webpack/17d76a0ec81b3e43067255199b4f6ab1cbc21e2e/1.pack 
+/. argon-design-system-pro-angular-v1.3.0/.angular/cache/13.3.9/angular-webpack/949459d0fc7fd2b5b0edb7a2b3a895ee4be09933/1.pack  argon-design-system-pro-angular-v1.3.0/.angular/cache/13.3.9/angular-webpack/b5f8cd1eb3f5663386edec21561a8ad86f15e651/0.pack 
+argon-design-system-pro-angular-v1.3.0/.angular/cache/13.3.9/angular-webpack/17d76a0ec81b3e43067255199b4f6ab1cbc21e2e/1.pack 
+argon-design-system-pro-angular-v1.3.0/.angular/cache/13.3.9/angular-webpack/949459d0fc7fd2b5b0edb7a2b3a895ee4be09933/1.pack 
+argon-design-system-pro-angular-v1.3.0/.angular/cache/13.3.9/angular-webpack/b5f8cd1eb3f5663386edec21561a8ad86f15e651/0.pack 
+
