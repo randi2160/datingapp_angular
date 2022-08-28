@@ -25,6 +25,8 @@ import { CarouselModule } from "ngx-bootstrap/carousel";
 import { ModalModule } from "ngx-bootstrap/modal";
 import { PopoverModule } from "ngx-bootstrap/popover";
 import { TimepickerModule } from "ngx-bootstrap/timepicker";
+import { ToastrModule } from "ngx-toastr";
+
 
 //import { PresentationModule } from "./presentation/presentation.module";
 
@@ -78,6 +80,9 @@ import { MessagesComponent } from './messages/messages.component';
   ],
   imports: [
     BrowserModule,
+    ToastrModule.forRoot({
+      positionClass: 'toast-bottom-right'
+    }),
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,

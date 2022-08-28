@@ -30,9 +30,7 @@
     transition: all .2s;
   }
   
-  .presentation-page {
-    /*       Loading dots  */
-  }
+  
   
   .presentation-page .loader {
     opacity: 0;
@@ -610,7 +608,7 @@
     background: -moz-linear-gradient(top, #FFFFFF 35%, #c38775 100%);
     background: -webkit-linear-gradient(top, #FFFFFF 35%, #c38775 100%);
     background: linear-gradient(to bottom, #FFFFFF 35%, #c38775 100%);
-    -webkit-background-clip: text;
+  
     -webkit-text-fill-color: transparent;
   }
   
@@ -978,7 +976,7 @@
       background: -moz-linear-gradient(top, #FFFFFF 64%, #c38775 100%);
       background: -webkit-linear-gradient(top, #FFFFFF 64%, #c38775 100%);
       background: linear-gradient(to bottom, #FFFFFF 64%, #c38775 100%);
-      -webkit-background-clip: text;
+     
       font-size: 8.4em;
     }
     .presentation-page .rellax-text-container,
@@ -1449,53 +1447,7 @@
     z-index: 2;
   }
   
-  @-webkit-keyframes Floatingy {
-    from {
-      -webkit-transform: translate(0, 0px);
-    }
-    65% {
-      -webkit-transform: translate(50px, 0);
-    }
-    to {
-      -webkit-transform: translate(0, 0px);
-    }
-  }
   
-  @-moz-keyframes Floatingy {
-    from {
-      -moz-transform: translate(0, 0px);
-    }
-    65% {
-      -moz-transform: translate(50px, 0);
-    }
-    to {
-      -moz-transform: translate(0, 0px);
-    }
-  }
-  
-  @-webkit-keyframes Floatingx {
-    from {
-      -webkit-transform: translate(50px, 0px);
-    }
-    65% {
-      -webkit-transform: translate(0, 0);
-    }
-    to {
-      -webkit-transform: translate(50px, 0px);
-    }
-  }
-  
-  @-moz-keyframes Floatingx {
-    from {
-      -moz-transform: translate(50px, 0px);
-    }
-    65% {
-      -moz-transform: translate(0, 0);
-    }
-    to {
-      -moz-transform: translate(50px, 0px);
-    }
-  }
   
   .table-img,
   .coloured-card-img,
@@ -1503,48 +1455,15 @@
   .linkedin-btn-img,
   .share-btn-img,
   .social-img {
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: ease-in-out;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: ease-in-out;
-    -webkit-animation-name: Floatingy;
-    -moz-animation-name: Floatingy;
-    float: left;
+       float: left;
   }
   
-  .table-img {
-    -webkit-animation-duration: 14s;
-    -moz-animation-duration: 14s;
-    -webkit-animation-name: Floatingx;
-    -moz-animation-name: Floatingx;
-  }
   
-  .coloured-card-img {
-    -webkit-animation-duration: 10s;
-    -moz-animation-duration: 10s;
-  }
+ 
   
-  .coloured-card-btn-img {
-    -webkit-animation-duration: 18s;
-    -moz-animation-duration: 18s;
-  }
   
-  .linkedin-btn-img {
-    -webkit-animation-duration: 15s;
-    -moz-animation-duration: 15s;
-    -webkit-animation-name: Floatingx;
-    -moz-animation-name: Floatingx;
-  }
   
-  .share-btn-img {
-    -webkit-animation-duration: 11s;
-    -moz-animation-duration: 11s;
-  }
   
-  .social-img {
-    -webkit-animation-duration: 16s;
-    -moz-animation-duration: 16s;
-    -webkit-animation-name: Floatingx;
-    -moz-animation-name: Floatingx;
-  }
+  
+
   

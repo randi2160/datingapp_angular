@@ -1,19 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-/*!
 
- =========================================================
- * Material Dashboard Pro - v2.2.1
- =========================================================
-
- * Product Page: https://www.creative-tim.com/product/material-dashboard-pro
- * Copyright 2020 Creative Tim (http://www.creative-tim.com)
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
- */
-/*     brand Colors     */
 .card {
     font-size: .875rem;
   }
@@ -11525,7 +11510,7 @@
     vertical-align: middle;
     position: relative;
     top: -2px;
-    float: left;
+  
     padding-right: 10px;
     display: inline-block;
   }
@@ -11772,7 +11757,7 @@
     vertical-align: middle;
     position: relative;
     top: -2px;
-    float: left;
+   
     padding-right: 10px;
     display: inline-block;
   }
@@ -13896,7 +13881,7 @@
   .navbar .navbar-toggler .navbar-toggler-icon {
     width: 22px;
     height: 2px;
-    vertical-align: middle;
+ 
     outline: 0;
     display: block;
     border-radius: 1px;
@@ -14071,7 +14056,7 @@
     border-radius: 10px;
     text-align: center;
     line-height: 19px;
-    vertical-align: middle;
+  
     display: block;
   }
   
@@ -20173,7 +20158,7 @@
   }
   
   .fixed-plugin .adjustments-line p {
-    float: left;
+   
     display: inline-block;
     margin-bottom: 0;
     font-size: 1em;
@@ -30140,10 +30125,7 @@
       display: none;
     }
   
-    .navbar-fixed-top {
-      -webkit-backface-visibility: hidden;
-    }
-  
+   
     #bodyClick {
       height: 100%;
       width: 100%;
