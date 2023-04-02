@@ -4,40 +4,50 @@
     <div class="navbar-wrapper">
       <a class="navbar-brand" href="#">DatingApp</a>
     </div>
+  
+    
+
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-target="#navbarNav">
       <span class="sr-only">Toggle navigation</span>
       <span class="navbar-toggler-icon icon-bar">g</span>
-      <span class="navbar-toggler-icon icon-bar"></span>
-      <span class="navbar-toggler-icon icon-bar"></span>
+      <span class="navbar-toggler-icon icon-bar">dddd</span>
+      <span class="navbar-toggler-icon icon-bar">dddds</span>
     </button>
+
+    
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav" *ngIf="accountService.currentUser$ | async">
+      <ul class="navbar-nav" >
        
-        <li class="nav-item active">
-          <a class="nav-link" [routerLink]="['/']" routerLinkActive="router-link-active">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" routerLink='/members' routerLinkActive="active">Matches</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/lists']" routerLinkActive="active">List</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link"  [routerLink]="['/messages']" routerLinkActive="active">Messages</a>
-         
-        </li>
+
+        <ng-container *ngIf="accountService.currentUser$ | async">
+          <li class="nav-item active">
+            <a class="nav-link" [routerLink]="['/']" routerLinkActive="router-link-active">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" routerLink='/members' routerLinkActive='active'>Matches</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/lists']" routerLinkActive='active'>List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  [routerLink]="['/messages']" routerLinkActive='active'>Messages</a>
+           
+          </li>
+
+          <div class="dropdown" *ngIf="(accountService.currentUser$ | async) as user" dropdown >
+            <a class="dropdown-toggle text-light" dropdownToggle>Welcome {{user.username| titlecase}}</a>
+            <div class="dropdown menu margin-top=3" *dropdownMenu>
+              <a class="dropdown-item">Edit profile</a>
+              <a class="dropdown-item" (click)="logout()">Logout</a>
+            </div>
+          </div>
+
+        </ng-container>
+       
        
         
       </ul>
-      <div class="dropdown" *ngIf="accountService.currentUser$ | async" dropdown>
-        <a class="dropdown-toggle text-light" dropdownToggle>Welcome User</a>
-        <div class="dropdown menu margin-top=3" *dropdownMenu>
-          <a class="dropdown-item">Edit profile</a>
-          <a class="dropdown-item" (click)="logout()">Logout</a>
-        </div>
-      </div>
-
-     
 
       
       <form *ngIf="(accountService.currentUser$ | async)===null" #loginForm="ngForm"  class="form-inline my-2 my-lg-0" (ngSubmit)="login()" autocomplete="off">
@@ -46,6 +56,7 @@
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
       </form>
     </div>
+ 
   </div>
 </nav>
 

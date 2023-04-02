@@ -54,6 +54,7 @@ import { MemberListComponent } from './members/member-list/member-list.component
 import { MemberDetailComponent } from './members/member-detail/member-detail.component';
 import { ListsComponent } from './lists/lists.component';
 import { MessagesComponent } from './messages/messages.component';
+import { SharedModule } from './_modules/shared.module';
 //import { PictureUploadComponent } from "./components/picture-upload/picture-upload.component";
 
 
@@ -80,9 +81,6 @@ import { MessagesComponent } from './messages/messages.component';
   ],
   imports: [
     BrowserModule,
-    ToastrModule.forRoot({
-      positionClass: 'toast-bottom-right'
-    }),
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
@@ -98,7 +96,7 @@ import { MessagesComponent } from './messages/messages.component';
     BsDatepickerModule.forRoot(),
     CarouselModule.forRoot(),
     ModalModule.forRoot(), 
-    BsDropdownModule.forRoot()
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
